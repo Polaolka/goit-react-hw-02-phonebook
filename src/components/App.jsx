@@ -35,8 +35,9 @@ class App extends Component {
       return;
     }
     this.setState(({ contacts }) => ({
-      contacts: [contact, ...contacts],
+      contacts: [contact, ...contacts]
     }));
+    NotificationManager.success(`Contact ${name} added successfully`)
   };
 
   deleteContact = contactId => {
