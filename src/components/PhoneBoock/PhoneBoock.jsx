@@ -59,20 +59,3 @@ export class PhoneBoock extends Component {
     );
   }
 }
-
-{
-  /* <div className={css.paper}>
-          <h2>Contacts</h2>
-          <p>Find contacts by name</p>
-          <input className={css.input}
-            type="text"
-            name="name"
-            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-            required
-          />
-          <ol>
-            <li>Name: <span>telNumber</span><button className={css.button}>Delete</button></li>
-          </ol>
-        </div> */
-}
