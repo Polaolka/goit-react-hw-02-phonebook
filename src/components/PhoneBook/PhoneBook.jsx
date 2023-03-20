@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import css from '../PhoneBoock/PhoneBoock.module.css';
+import css from '../PhoneBook/PhoneBook.module.css';
+import PropTypes from 'prop-types';
 
-export class PhoneBoock extends Component {
+export class PhoneBook extends Component {
   state = {
     name: '',
     number: '',
@@ -58,4 +59,7 @@ export class PhoneBoock extends Component {
       </div>
     );
   }
+}
+PhoneBook.propTypes = {
+  onSubmit: PropTypes.func.isRequired
 }

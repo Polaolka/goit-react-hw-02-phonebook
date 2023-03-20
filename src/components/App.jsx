@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
 import { Section } from './Section/Section';
 import { ContactsList } from './ContactsList/ContactsList';
-import { PhoneBoock } from './PhoneBoock/PhoneBoock';
+import { PhoneBook } from './PhoneBook/PhoneBook';
 import { Filter } from './Filter/Filter';
 import 'react-notifications/lib/notifications.css';
 import {
@@ -67,7 +67,7 @@ class App extends Component {
     return (
       <>
         <Section title="Phonebook">
-          <PhoneBoock onSubmit={this.addContact} />
+          <PhoneBook onSubmit={this.addContact} />
         </Section>
         <Section title="Contacts">
           <Filter

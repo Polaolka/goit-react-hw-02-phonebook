@@ -1,5 +1,6 @@
 import React from 'react';
 import css from '../Filter/Filter.module.css';
+import PropTypes from 'prop-types';
 
 export const Filter = ({ value, onChange, totalcontactsCount }) => (
   <form className={css.form}>
@@ -17,3 +18,9 @@ export const Filter = ({ value, onChange, totalcontactsCount }) => (
     </label>
   </form>
 );
+
+Filter.propTypes = {
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  totalcontactsCount: PropTypes.number.isRequired
+}
